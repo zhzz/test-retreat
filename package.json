@@ -1,0 +1,28 @@
+{
+  "name": "test-retreat",
+  "version": "1.0.0",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@skbkontur/react-ui": "^1.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "@storybook/react": "^5.3.12",
+    "babel-loader": "^8.0.6",
+    "babel-preset-react-app": "^9.1.1",
+    "creevey": "^0.3.6",
+    "css-loader": "^3.4.2",
+    "selenium-webdriver": "^4.0.0-alpha.5",
+    "style-loader": "^1.1.3"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "creevey": "node --require ./scripts/babel-register -- node_modules/creevey/lib/cli --ui --gridUrl 'http://screen:shot@grid.testkontur.ru/wd/hub'"
+  }
+}
