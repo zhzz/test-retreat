@@ -1,5 +1,12 @@
 module.exports = {
-  sourceMaps: 'inline',
-  presets: [["react-app", { "flow": false, "typescript": true }]],
-  // plugins: ['@babel/plugin-proposal-class-properties'],
+  presets: [
+    [
+      "@babel/preset-env",
+      {
+        "loose": true
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-typescript",
+  ],
 };
