@@ -1,5 +1,5 @@
-const { configure, addDecorator } = require('@storybook/react');
-const { withCreevey } = require('creevey');
+import { configure, addDecorator } from '@storybook/react';
+import { withCreevey } from 'creevey';
 
 addDecorator(withCreevey({ captureElement: '#root' }));
 
